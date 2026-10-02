@@ -1,117 +1,238 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Arusa Junior Portfolio</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <header>
     <ul>
-    <li><a href="#home">Home</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#education">Education</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#contact">Contact</a></li>
-</ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+
+        <!-- UPDATED: Projects now opens projects.html -->
+        <li><a href="projects.html">Projects</a></li>
+
+        <li><a href="#contact">Contact</a></li>
+    </ul>
 </header>
+
 
 <main>
 
-<section id="home">
-    <img src="images/profile.jpeg" alt="Arusa Junior">
-    <h1>Arusa Junior</h1>
-    <p>Aspiring Web Developer & IT Student</p>
-    <div class="hero-buttons">
-    <a href="#projects" class="btn">View Projects</a>
-    <a href="#contact" class="btn btn-outline">Contact Me</a>
-</div>
-</section>
+    <!-- ================= HOME ================= -->
 
-<section id="about">
-    <h2>About Me</h2>
-    <p>
-        I am an IT student at KCA University with an interest in web development,
-        networking, and emerging technologies. I enjoy learning new skills and
-        creating technology solutions.
-    </p>
-</section>
+    <section id="home">
 
-<section id="skills">
-    <h2>Skills</h2>
+        <img src="images/profile.jpeg" alt="Arusa Junior">
 
-    <div class="skills-container">
+        <h1>Arusa Junior</h1>
 
-        <div class="skill-card">
-            <h3>Frontend Development</h3>
-            <p>HTML5, CSS3, Responsive Design</p>
+        <p>
+            Aspiring Web Developer & IT Student
+        </p>
+
+        <div class="hero-buttons">
+
+            <!-- UPDATED: View Projects opens Assignment 2 page -->
+            <a href="projects.html" class="btn">
+                View Projects
+            </a>
+
+            <a href="#contact" class="btn btn-outline">
+                Contact Me
+            </a>
+
         </div>
 
-        <div class="skill-card">
-            <h3>Tools</h3>
-            <p>Git, GitHub, VS Code</p>
+    </section>
+
+
+    <!-- ================= ABOUT ================= -->
+
+    <section id="about">
+
+        <h2>About Me</h2>
+
+        <p>
+            I am an IT student at KCA University with an interest in
+            web development, networking, and emerging technologies.
+            I enjoy learning new skills and creating technology solutions.
+        </p>
+
+    </section>
+
+
+    <!-- ================= SKILLS ================= -->
+
+    <section id="skills">
+
+        <h2>Skills</h2>
+
+        <div class="skills-container">
+
+            <div class="skill-card">
+
+                <h3>Frontend Development</h3>
+
+                <p>
+                    HTML5, CSS3, Responsive Design
+                </p>
+
+            </div>
+
+
+            <div class="skill-card">
+
+                <h3>Tools</h3>
+
+                <p>
+                    Git, GitHub, VS Code
+                </p>
+
+            </div>
+
+
+            <div class="skill-card">
+
+                <h3>Networking</h3>
+
+                <p>
+                    Computer Networks & Internet Technologies
+                </p>
+
+            </div>
+
         </div>
 
-        <div class="skill-card">
-            <h3>Networking</h3>
-            <p>Computer Networks & Internet Technologies</p>
+    </section>
+
+
+    <!-- ================= EDUCATION ================= -->
+
+    <section id="education">
+
+        <h2>Education</h2>
+
+        <div class="project-card">
+
+            <h3>KCA University</h3>
+
+            <p>
+                Bachelor of Science in Information Technology
+            </p>
+
+            <p>
+                2025 - Present
+            </p>
+
         </div>
 
-    </div>
-</section>
+    </section>
 
-<section id="education">
-    <h2>Education</h2>
 
-    <div class="project-card">
-        <h3>KCA University</h3>
-        <p>Bachelor of Science in Information Technology</p>
-        <p>2025 - Present</p>
-    </div>
-</section>
+    <!-- ================= CAREER GOALS ================= -->
 
-<section id="goals">
-    <h2>Career Goals</h2>
+    <section id="goals">
 
-    <p>
-        My goal is to become a professional software developer and contribute
-        to innovative technology solutions that solve real-world problems.
-    </p>
-</section>
+        <h2>Career Goals</h2>
 
-<section id="projects">
-    <h2>Projects</h2>
+        <p>
+            My goal is to become a professional software developer
+            and contribute to innovative technology solutions that
+            solve real-world problems.
+        </p>
 
-    <div class="project-card">
-        <h3>Personal Portfolio Website</h3>
-        <p>A responsive portfolio website built using HTML5 and CSS3.</p>
-    </div>
+    </section>
 
-    <div class="project-card">
-        <h3>Future Projects</h3>
-        <p>Additional projects will be showcased in Assignment 2.</p>
-    </div>
-</section>
+
+    <!-- ================= PROJECTS ================= -->
+
+    <section id="projects">
+
+        <h2>Projects</h2>
+
+        <div class="project-card">
+
+            <h3>Personal Portfolio Website</h3>
+
+            <p>
+                A responsive portfolio website built using HTML5
+                and CSS3 as part of my Web Technologies coursework.
+            </p>
+
+        </div>
+
+
+        <div class="project-card">
+
+            <h3>Assignment 2 Projects</h3>
+
+            <p>
+                Explore my skills, projects, services and JavaScript
+                functionality on my Assignment 2 projects page.
+            </p>
+
+            <!-- NEW LINK TO PROJECTS PAGE -->
+            <a href="projects.html" class="btn">
+                View Projects Page
+            </a>
+
+        </div>
+
+    </section>
 
 </main>
 
+
+<!-- ================= CONTACT ================= -->
+
 <footer id="contact">
+
     <h2>Contact Me</h2>
 
-    <p>Email: arusajunior@gmail.com</p>
+    <p>
+        Email:
+        <a href="mailto:arusajunior@gmail.com">
+            arusajunior@gmail.com
+        </a>
+    </p>
 
     <div class="social-links">
-        <a href="https://github.com/arusajunior7-code" target="_blank">GitHub</a>
-        <a href="https://www.linkedin.com/in/arusa-junior-366900439" target="_blank">LinkedIn</a>
+
+        <a
+            href="https://github.com/arusajunior7-code"
+            target="_blank"
+            rel="noopener noreferrer">
+            GitHub
+        </a>
+
+        <a
+            href="https://www.linkedin.com/in/arusa-junior-366900439"
+            target="_blank"
+            rel="noopener noreferrer">
+            LinkedIn
+        </a>
+
     </div>
+
 
     <p class="copyright">
         © 2026 Arusa Junior | KCA University Portfolio
     </p>
+
 </footer>
 
 </body>
 </html>
+```
