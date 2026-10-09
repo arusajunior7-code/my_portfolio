@@ -85,6 +85,12 @@ my_portfolio/
 
 **Email:** [arusajunior@gmail.com](mailto:arusajunior@gmail.com)
 
+##Lighthouse performance scores
+
+On an incognito tab these were the observations in the performance scores:
+score of 74 - before compressing the image.
+score of 84 - after compressing the image.
+
 ## 📄 License
 
 This project is created for educational and portfolio purposes.
