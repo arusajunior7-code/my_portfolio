@@ -160,3 +160,32 @@ contactForm.addEventListener("submit", function(event) {
     }
 
 });
+
+async function loadRepos() {
+  const list = document.getElementById("repo-list");
+
+  try {
+    const res = await fetch("https://api.github.com/users/arusajunior7-code/repos");
+    if (!res.ok) throw new Error("Bad response");
+
+    const repos = await res.json();
+    console.log("Fetched Repositories:", repos); // This prints the data to your console
+    // Overwrites the "Loading..." <li> item automatically
+    list.innerHTML = ""; 
+
+    repos.forEach((r) => {
+      const li = document.createElement("li");
+     
+        const a = document.createElement("a");
+        a.href = r.html_url;
+        a.textContent = r.name;
+        a.target = "_blank"; 
+        li.appendChild(a);
+        if (list) list.appendChild(li);
+    });
+  } catch (e) {
+    list.innerHTML = "<li>Sorry, repositories could not load right now.</li>";
+  }
+}
+
+loadRepos();
